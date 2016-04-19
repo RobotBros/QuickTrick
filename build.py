@@ -79,7 +79,7 @@ class CatalogModel(object):
 
             tid = '{}-1'.format(title)
             created = int(os.stat(d[0]).st_mtime)
-            url = self.url_normalize(path)
+            url = path
             # Get supported language
             languages = []
             for f in d[2]:
