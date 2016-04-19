@@ -1,529 +1,632 @@
 {
-	"title": "vi",
+	"tid": "vi",
+	"title": "Vi Cheetsheet",
 	"sections": [
 		{
-			"section_name": "Input commands (end with ESC)",
+			"sectionId": "vi-1",
+			"sectionName": "Input commands (end with ESC)",
 			"remark": "Any of these commands leaves vi in input mode until you press __ESC__. Pressing the __RETURN__ key will not take you out of input mode",
 			"tricks": [
 				{
-					"trick_name": "a",
-					"trick_desc": "Append after cursor",
-					"trick_example": ""
+					"trickId": "vi-1-1",
+					"trickName": "a",
+					"trickDesc": "Append after cursor",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "i",
-					"trick_desc": "Insert before cursor",
-					"trick_example": ""	
+					"trickId": "vi-1-2",
+					"trickName": "i",
+					"trickDesc": "Insert before cursor",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": "o",
-					"trick_desc": "Open line below",
-					"trick_example": ""	
+					"trickId": "vi-1-3",
+					"trickName": "o",
+					"trickDesc": "Open line below",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": "O",
-					"trick_desc": "Open line above",
-					"trick_example": ""	
+					"trickId": "vi-1-4",
+					"trickName": "O",
+					"trickDesc": "Open line above",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": ":r _file_",
-					"trick_desc": "Insert _file_ after current line",
-					"trick_example": ""
+					"trickId": "vi-1-5",
+					"trickName": ":r _file_",
+					"trickDesc": "Insert _file_ after current line",
+					"trickExample": ""
 				}
 			]
 		},
 		{
-			"section_name": "Change commands (Input mode)",
+			"sectionId": "vi-2",
+			"sectionName": "Change commands (Input mode)",
 			"remark": "",
 			"tricks": [
 				{
-					"trick_name": "cw",
-					"trick_desc": "Change word (Esc)",
-					"trick_example": ""
+					"trickId": "vi-2-1",
+					"trickName": "cw",
+					"trickDesc": "Change word (Esc)",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "cc",
-					"trick_desc": "Change line (Esc) - blank line",
-					"trick_example": ""	
+					"trickId": "vi-2-2",
+					"trickName": "cc",
+					"trickDesc": "Change line (Esc) - blank line",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": "c$",
-					"trick_desc": "Replace character with c",
-					"trick_example": ""
+					"trickId": "vi-2-3",
+					"trickName": "c$",
+					"trickDesc": "Replace character with c",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "r_c_",
-					"trick_desc": "Replace character with _c_",
-					"trick_example": ""	
+					"trickId": "vi-2-4",
+					"trickName": "r_c_",
+					"trickDesc": "Replace character with _c_",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": "R",
-					"trick_desc": "Replace (Esc) - typeover",
-					"trick_example": ""
+					"trickId": "vi-2-5",
+					"trickName": "R",
+					"trickDesc": "Replace (Esc) - typeover",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "s",
-					"trick_desc": "Subsititute (Esc) - 1 character with string",
-					"trick_example": ""
+					"trickId": "vi-2-6",
+					"trickName": "s",
+					"trickDesc": "Subsititute (Esc) - 1 character with string",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "S",
-					"trick_desc": "Subsititute (Esc) - Rest of line with text",
-					"trick_example": ""
+					"trickId": "vi-2-7",
+					"trickName": "S",
+					"trickDesc": "Subsititute (Esc) - Rest of line with text",
+					"trickExample": ""
 				},
 				{
-					"trick_name": ".",
-					"trick_desc": "Repeat last change",
-					"trick_example": ""
+					"trickId": "vi-2-8",
+					"trickName": ".",
+					"trickDesc": "Repeat last change",
+					"trickExample": ""
 				}
 			]
 		},
 		{
-			"section_name": "Changes during insert mode",
+			"sectionId": "vi-3",
+			"sectionName": "Changes during insert mode",
 			"remark": "",
 			"tricks": [
 				{
-					"trick_name": "Ctrl + h",
-					"trick_desc": "Back one character",
-					"trick_example": ""
+					"trickId": "vi-3-1",
+					"trickName": "Ctrl + h",
+					"trickDesc": "Back one character",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "Ctrl + w",
-					"trick_desc": "Back one word",
-					"trick_example": ""	
+					"trickId": "vi-3-2",
+					"trickName": "Ctrl + w",
+					"trickDesc": "Back one word",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": "Ctrl + u",
-					"trick_desc": "Back to begining of insert",
-					"trick_example": ""	
+					"trickId": "vi-3-3",
+					"trickName": "Ctrl + u",
+					"trickDesc": "Back to begining of insert",
+					"trickExample": ""	
 				}
 			]
 		},
 		{
-			"section_name": "File management commands",
+			"sectionId": "vi-4",
+			"sectionName": "File management commands",
 			"remark": "",
 			"tricks": [
 				{
-					"trick_name": ":w _name_",
-					"trick_desc": "Write edit buffer to file _name_",
-					"trick_example": ""
+					"trickId": "vi-4-1",
+					"trickName": ":w _name_",
+					"trickDesc": "Write edit buffer to file _name_",
+					"trickExample": ""
 				},
 				{
-					"trick_name": ":wq",
-					"trick_desc": "Write to file and quit",
-					"trick_example": ""	
+					"trickId": "vi-4-2",
+					"trickName": ":wq",
+					"trickDesc": "Write to file and quit",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": ":q!",
-					"trick_desc": "Quit without saving changes",
-					"trick_example": ""	
+					"trickId": "vi-4-3",
+					"trickName": ":q!",
+					"trickDesc": "Quit without saving changes",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": "ZZ",
-					"trick_desc": "Same as :wq",
-					"trick_example": ""	
+					"trickId": "vi-4-4",
+					"trickName": "ZZ",
+					"trickDesc": "Same as :wq",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": ":sh",
-					"trick_desc": "Execute shell commands (Ctrl + d to end)",
-					"trick_example": ""	
+					"trickId": "vi-4-5",
+					"trickName": ":sh",
+					"trickDesc": "Execute shell commands (Ctrl + d to end)",
+					"trickExample": ""	
 				}
 			]
 		},
 		{
-			"section_name": "Window motions",
+			"sectionId": "vi-5",
+			"sectionName": "Window motions",
 			"remark": "",
 			"tricks": [
 				{
-					"trick_name": "Ctrl + d",
-					"trick_desc": "Scroll down (half a screen)",
-					"trick_example": ""
+					"trickId": "vi-5-1",
+					"trickName": "Ctrl + d",
+					"trickDesc": "Scroll down (half a screen)",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "Ctrl + u",
-					"trick_desc": "Scroll up (half a screen)",
-					"trick_example": ""
+					"trickId": "vi-5-2",
+					"trickName": "Ctrl + u",
+					"trickDesc": "Scroll up (half a screen)",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "Ctrl + f",
-					"trick_desc": "Page forward",
-					"trick_example": ""
+					"trickId": "vi-5-3",
+					"trickName": "Ctrl + f",
+					"trickDesc": "Page forward",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "Ctrl + b",
-					"trick_desc": "Page backward",
-					"trick_example": ""
+					"trickId": "vi-5-4",
+					"trickName": "Ctrl + b",
+					"trickDesc": "Page backward",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "/_string_",
-					"trick_desc": "Search forward for _string_",
-					"trick_example": ""
+					"trickId": "vi-5-5",
+					"trickName": "/_string_",
+					"trickDesc": "Search forward for _string_",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "?_string_",
-					"trick_desc": "Search backward for _string_",
-					"trick_example": ""
+					"trickId": "vi-5-6",
+					"trickName": "?_string_",
+					"trickDesc": "Search backward for _string_",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "Ctrl + l",
-					"trick_desc": "Redraw screen",
-					"trick_example": ""
+					"trickId": "vi-5-7",
+					"trickName": "Ctrl + l",
+					"trickDesc": "Redraw screen",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "Ctrl + g",
-					"trick_desc": "Display current line number and file information",
-					"trick_example": ""
+					"trickId": "vi-5-8",
+					"trickName": "Ctrl + g",
+					"trickDesc": "Display current line number and file information",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "n",
-					"trick_desc": "Repeat search. Forward when last command is /_string_, or backward when last command is ?_string_.",
-					"trick_example": ""
+					"trickId": "vi-5-9",
+					"trickName": "n",
+					"trickDesc": "Repeat search. Forward when last command is /_string_, or backward when last command is ?_string_.",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "N",
-					"trick_desc": "Repeat search reverse. Search forward when last command is ?_string_, or backward when last command is /string",
-					"trick_example": ""
+					"trickId": "vi-5-10",
+					"trickName": "N",
+					"trickDesc": "Repeat search reverse. Search forward when last command is ?_string_, or backward when last command is /string",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "G",
-					"trick_desc": "Go to last line",
-					"trick_example": ""
+					"trickId": "vi-5-11",
+					"trickName": "G",
+					"trickDesc": "Go to last line",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "_n_G",
-					"trick_desc": "Go to line _n_",
-					"trick_example": ""
+					"trickId": "vi-5-12",
+					"trickName": "_n_G",
+					"trickDesc": "Go to line _n_",
+					"trickExample": ""
 				},
 				{
-					"trick_name": ":_n_",
-					"trick_desc": "Go to line _n_",
-					"trick_example": ""
+					"trickId": "vi-5-13",
+					"trickName": ":_n_",
+					"trickDesc": "Go to line _n_",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "z CR",
-					"trick_desc": "Reposition window: cursor at top",
-					"trick_example": ""
+					"trickId": "vi-5-14",
+					"trickName": "z CR",
+					"trickDesc": "Reposition window: cursor at top",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "z.",
-					"trick_desc": "Reposition window: cursor in middle",
-					"trick_example": ""
+					"trickId": "vi-5-15",
+					"trickName": "z.",
+					"trickDesc": "Reposition window: cursor in middle",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "z-",
-					"trick_desc": "Reposition window: cursor in bottom",
-					"trick_example": ""
+					"trickId": "vi-5-16",
+					"trickName": "z-",
+					"trickDesc": "Reposition window: cursor in bottom",
+					"trickExample": ""
 				}
 			]
 		},
 		{
-			"section_name": "Cursor motions",
+			"sectionId": "vi-6",
+			"sectionName": "Cursor motions",
 			"remark": "",
 			"tricks": [
 				{
-					"trick_name": "H",
-					"trick_desc": "Up left corner (home)",
-					"trick_example": ""
+					"trickId": "vi-6-1",
+					"trickName": "H",
+					"trickDesc": "Up left corner (home)",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "M",
-					"trick_desc": "Middle line",
-					"trick_example": ""
+					"trickId": "vi-6-2",
+					"trickName": "M",
+					"trickDesc": "Middle line",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "L",
-					"trick_desc": "Lower left corner",
-					"trick_example": ""
+					"trickId": "vi-6-3",
+					"trickName": "L",
+					"trickDesc": "Lower left corner",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "h",
-					"trick_desc": "Back a character",
-					"trick_example": ""
+					"trickId": "vi-6-4",
+					"trickName": "h",
+					"trickDesc": "Back a character",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "j",
-					"trick_desc": "Down a line",
-					"trick_example": ""
+					"trickId": "vi-6-5",
+					"trickName": "j",
+					"trickDesc": "Down a line",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "k",
-					"trick_desc": "Up a line",
-					"trick_example": ""
+					"trickId": "vi-6-6",
+					"trickName": "k",
+					"trickDesc": "Up a line",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "^",
-					"trick_desc": "Begin of line",
-					"trick_example": ""
+					"trickId": "vi-6-7",
+					"trickName": "^",
+					"trickDesc": "Begin of line",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "$",
-					"trick_desc": "End of line",
-					"trick_example": ""
+					"trickId": "vi-6-8",
+					"trickName": "$",
+					"trickDesc": "End of line",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "l",
-					"trick_desc": "Forward a character",
-					"trick_example": ""
+					"trickId": "vi-6-9",
+					"trickName": "l",
+					"trickDesc": "Forward a character",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "w",
-					"trick_desc": "One word forward",
-					"trick_example": ""
+					"trickId": "vi-6-10",
+					"trickName": "w",
+					"trickDesc": "One word forward",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "b",
-					"trick_desc": "Back one word",
-					"trick_example": ""
+					"trickId": "vi-6-11",
+					"trickName": "b",
+					"trickDesc": "Back one word",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "f_c_",
-					"trick_desc": "Find forward for character _c_",
-					"trick_example": ""
+					"trickId": "vi-6-12",
+					"trickName": "f_c_",
+					"trickDesc": "Find forward for character _c_",
+					"trickExample": ""
 				},
 				{
-					"trick_name": ";",
-					"trick_desc": "Repeat find",
-					"trick_example": ""
+					"trickId": "vi-6-13",
+					"trickName": ";",
+					"trickDesc": "Repeat find",
+					"trickExample": ""
 				}
 			]
 		},
 		{
-			"section_name": "Delete commands",
+			"sectionId": "vi-7",
+			"sectionName": "Delete commands",
 			"remark": "",
 			"tricks": [
 				{
-					"trick_name": "dd",
-					"trick_desc": "Delete current line to general buffer",
-					"trick_example": ""
+					"trickId": "vi-7-1",
+					"trickName": "dd",
+					"trickDesc": "Delete current line to general buffer",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "_n_dd",
-					"trick_desc": "Delete _n_ lines to general buffer",
-					"trick_example": ""	
+					"trickId": "vi-7-2",
+					"trickName": "_n_dd",
+					"trickDesc": "Delete _n_ lines to general buffer",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": "dw",
-					"trick_desc": "Delete a word to general buffer",
-					"trick_example": ""	
+					"trickId": "vi-7-3",
+					"trickName": "dw",
+					"trickDesc": "Delete a word to general buffer",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": "d_n_w",
-					"trick_desc": "Delete n words",
-					"trick_example": ""	
+					"trickId": "vi-7-4",
+					"trickName": "d_n_w",
+					"trickDesc": "Delete n words",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": "d)",
-					"trick_desc": "Delete to end of sentence",
-					"trick_example": ""	
+					"trickId": "vi-7-5",
+					"trickName": "d)",
+					"trickDesc": "Delete to end of sentence",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": "db",
-					"trick_desc": "Delete previous word",
-					"trick_example": ""	
+					"trickId": "vi-7-6",
+					"trickName": "db",
+					"trickDesc": "Delete previous word",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": "D",
-					"trick_desc": "Delete to end of line",
-					"trick_example": ""	
+					"trickId": "vi-7-7",
+					"trickName": "D",
+					"trickDesc": "Delete to end of line",
+					"trickExample": ""	
 				},
 				{
-					"trick_name": "x",
-					"trick_desc": "Delete one character",
-					"trick_example": ""	
+					"trickId": "vi-7-8",
+					"trickName": "x",
+					"trickDesc": "Delete one character",
+					"trickExample": ""	
 				}
 			]
 		},
 		{
-			"section_name": "Recovering deletions",
+			"sectionId": "vi-8",
+			"sectionName": "Recovering deletions",
 			"remark": "",
 			"tricks": [
 				{
-					"trick_name": "p",
-					"trick_desc": "Put general buffer after cursor",
-					"trick_example": ""
+					"trickId": "vi-8-1",
+					"trickName": "p",
+					"trickDesc": "Put general buffer after cursor",
+					"trickExample": ""
 				},
 				{
-					"trick_name": "P",
-					"trick_desc": "Put general buffer before cursor",
-					"trick_example": ""	
-				},
-			]
-		},
-		{
-			"section_name": "Undo commands",
-			"remark": "",
-			"tricks": [
-				{
-					"trick_name": "u",
-					"trick_desc": "Undo last change",
-					"trick_example": ""
-				},
-				{
-					"trick_name": "U",
-					"trick_desc": "Undo all changes on line",
-					"trick_example": ""	
-				},
-			]
-		},
-		{
-			"section_name": "Rearrange commands",
-			"remark": "",
-			"tricks": [
-				{
-					"trick_name": "yy or Y",
-					"trick_desc": "Yank (copy) line to general buffer",
-					"trick_example": ""
-				},
-				{
-					"trick_name": "\"_z6_yy",
-					"trick_desc": "Yank (copy) _6_ lines to buffer _z_",
-					"trick_example": ""	
-				},
-				{
-					"trick_name": "yw",
-					"trick_desc": "Yank (copy) word to general buffer",
-					"trick_example": ""	
-				},
-				{
-					"trick_name": "\"a9dd",
-					"trick_desc": "Delete _9_ liens to buffer a",
-					"trick_example": ""	
-				},
-				{
-					"trick_name": "\"A9dd",
-					"trick_desc": "Delete _9_ liens, and append to buffer a",
-					"trick_example": ""	
-				},
-				{
-					"trick_name": "\"ap",
-					"trick_desc": "Put text from buffer _a_ after cursor",
-					"trick_example": ""	
-				},
-			]
-		},
-		{
-			"section_name": "Parameters",
-			"remark": "",
-			"tricks": [
-				{
-					"trick_name": ":set list",
-					"trick_desc": "Show invisible characters",
-					"trick_example": ""
-				},
-				{
-					"trick_name": ":set nolist",
-					"trick_desc": "Don't show invisible characters",
-					"trick_example": ""
-				},
-				{
-					"trick_name": ":set number",
-					"trick_desc": "Show line numbers",
-					"trick_example": ""
-				},
-				{
-					"trick_name": ":set nonumber",
-					"trick_desc": "Don't show line numbers",
-					"trick_example": ""
-				},
-				{
-					"trick_name": ":set autoindent",
-					"trick_desc": "Indent after carriage return",
-					"trick_example": ""
-				},
-				{
-					"trick_name": ":set noautoindent",
-					"trick_desc": "Turn of autoindent",
-					"trick_example": ""
-				},
-				{
-					"trick_name": ":set showmatch",
-					"trick_desc": "Show matching sets of parentheses as they typed",
-					"trick_example": ""
-				},
-				{
-					"trick_name": ":set noshowmatch",
-					"trick_desc": "Turn of showmatch",
-					"trick_example": ""
-				},
-				{
-					"trick_name": ":set showmode",
-					"trick_desc": "Display mode on last line of screen",
-					"trick_example": ""
-				},
-				{
-					"trick_name": ":set noshowmode",
-					"trick_desc": "Turn off showmode",
-					"trick_example": ""
-				},
-				{
-					"trick_name": ":set all",
-					"trick_desc": "Show values of all possible parameters",
-					"trick_example": ""
-				},
-			]
-		},
-		{
-			"section_name": "Move text from _old_ to file _new_",
-			"remark": "",
-			"tricks": [
-				{
-					"trick_name": ":e _new_",
-					"trick_desc": "Edit _new_ file ",
-					"trick_example": ""
-				},
-				{
-					"trick_name": ":_30_,_60_w _new_",
-					"trick_desc": "Write lines 30 to 60 in file _new_",
-					"trick_example": ""	
-				},
-			]
-		},
-		{
-			"section_name": "Regular expression",
-			"remark": "",
-			"tricks": [
-				{
-					"trick_name": "^",
-					"trick_desc": "Match begining of line",
-					"trick_example": ""
-				},
-				{
-					"trick_name": "$",
-					"trick_desc": "Match end of line",
-					"trick_example": ""	
-				},
-				{
-					"trick_name": ".",
-					"trick_desc": "Match any single character",
-					"trick_example": ""	
-				},
-				{
-					"trick_name": "*",
-					"trick_desc": "Match any previous character",
-					"trick_example": ""	
-				},
-				{
-					"trick_name": ".*",
-					"trick_desc": "Match any character",
-					"trick_example": ""	
+					"trickId": "vi-8-2",
+					"trickName": "P",
+					"trickDesc": "Put general buffer before cursor",
+					"trickExample": ""	
 				}
 			]
 		},
 		{
-			"section_name": "Search and replace",
+			"sectionId": "vi-9",
+			"sectionName": "Undo commands",
+			"remark": "",
+			"tricks": [
+				{
+					"trickId": "vi-9-1",
+					"trickName": "u",
+					"trickDesc": "Undo last change",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-9-2",
+					"trickName": "U",
+					"trickDesc": "Undo all changes on line",
+					"trickExample": ""	
+				}
+			]
+		},
+		{
+			"sectionId": "vi-10",
+			"sectionName": "Rearrange commands",
+			"remark": "",
+			"tricks": [
+				{
+					"trickId": "vi-10-1",
+					"trickName": "yy or Y",
+					"trickDesc": "Yank (copy) line to general buffer",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-10-2",
+					"trickName": "\"_z6_yy",
+					"trickDesc": "Yank (copy) _6_ lines to buffer _z_",
+					"trickExample": ""	
+				},
+				{
+					"trickId": "vi-10-3",
+					"trickName": "yw",
+					"trickDesc": "Yank (copy) word to general buffer",
+					"trickExample": ""	
+				},
+				{
+					"trickId": "vi-10-4",
+					"trickName": "\"a9dd",
+					"trickDesc": "Delete _9_ liens to buffer a",
+					"trickExample": ""	
+				},
+				{
+					"trickId": "vi-10-5",
+					"trickName": "\"A9dd",
+					"trickDesc": "Delete _9_ liens, and append to buffer a",
+					"trickExample": ""	
+				},
+				{
+					"trickId": "vi-10-6",
+					"trickName": "\"ap",
+					"trickDesc": "Put text from buffer _a_ after cursor",
+					"trickExample": ""	
+				}
+			]
+		},
+		{
+			"sectionId": "vi-11",
+			"sectionName": "Parameters",
+			"remark": "",
+			"tricks": [
+				{
+					"trickId": "vi-11-1",
+					"trickName": ":set list",
+					"trickDesc": "Show invisible characters",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-11-2",
+					"trickName": ":set nolist",
+					"trickDesc": "Don't show invisible characters",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-11-3",
+					"trickName": ":set number",
+					"trickDesc": "Show line numbers",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-11-4",
+					"trickName": ":set nonumber",
+					"trickDesc": "Don't show line numbers",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-11-5",
+					"trickName": ":set autoindent",
+					"trickDesc": "Indent after carriage return",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-11-6",
+					"trickName": ":set noautoindent",
+					"trickDesc": "Turn of autoindent",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-11-7",
+					"trickName": ":set showmatch",
+					"trickDesc": "Show matching sets of parentheses as they typed",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-11-8",
+					"trickName": ":set noshowmatch",
+					"trickDesc": "Turn of showmatch",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-11-9",
+					"trickName": ":set showmode",
+					"trickDesc": "Display mode on last line of screen",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-11-10",
+					"trickName": ":set noshowmode",
+					"trickDesc": "Turn off showmode",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-11-11",
+					"trickName": ":set all",
+					"trickDesc": "Show values of all possible parameters",
+					"trickExample": ""
+				}
+			]
+		},
+		{
+			"sectionId": "vi-12",
+			"sectionName": "Move text from _old_ to file _new_",
+			"remark": "",
+			"tricks": [
+				{
+					"trickId": "vi-12-1",
+					"trickName": ":e _new_",
+					"trickDesc": "Edit _new_ file ",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-12-2",
+					"trickName": ":_30_,_60_w _new_",
+					"trickDesc": "Write lines 30 to 60 in file _new_",
+					"trickExample": ""	
+				}
+			]
+		},
+		{
+			"sectionId": "vi-13",
+			"sectionName": "Regular expression",
+			"remark": "",
+			"tricks": [
+				{
+					"trickId": "vi-13-1",
+					"trickName": "^",
+					"trickDesc": "Match begining of line",
+					"trickExample": ""
+				},
+				{
+					"trickId": "vi-13-2",
+					"trickName": "$",
+					"trickDesc": "Match end of line",
+					"trickExample": ""	
+				},
+				{
+					"trickId": "vi-13-3",
+					"trickName": ".",
+					"trickDesc": "Match any single character",
+					"trickExample": ""	
+				},
+				{
+					"trickId": "vi-13-4",
+					"trickName": "*",
+					"trickDesc": "Match any previous character",
+					"trickExample": ""	
+				},
+				{
+					"trickId": "vi-13-5",
+					"trickName": ".*",
+					"trickDesc": "Match any character",
+					"trickExample": ""	
+				}
+			]
+		},
+		{
+			"sectionId": "vi-14",
+			"sectionName": "Search and replace",
 			"remark": "Syntax\n\t:[address]s/old_text/new_text/",
 			"tricks": [
 				{
-					"trick_name": ":s/_old_/_new_/",
-					"trick_desc": "Replace next _old_ with _new_",
-					"trick_example": ""
+					"trickId": "vi-14-1",
+					"trickName": ":s/_old_/_new_/",
+					"trickDesc": "Replace next _old_ with _new_",
+					"trickExample": ""
 				},
 				{
-					"trick_name": ":%s/_old_/_new_/g",
-					"trick_desc": "Replace all _old_ with _new_",
-					"trick_example": ""
+					"trickId": "vi-14-2",
+					"trickName": ":%s/_old_/_new_/g",
+					"trickDesc": "Replace all _old_ with _new_",
+					"trickExample": ""
 				}
 			]
-		},
+		}
 	]
 }

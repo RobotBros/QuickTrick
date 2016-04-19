@@ -12,7 +12,7 @@ REPO_NAME = 'RobotBros/QuickTrick'
 
 ISO_639_1_CODES = ['en-US', 'en-GB', 'en-CA', 'en-AU', 'zh-CN', 'zh-TW', 'zh-HK']
 
-TRICK_PREFIX = ['cheetsheet', 'trick']
+TRICK_PREFIX = ['cheetsheet', 'shortcut']
 
 
 class MyEncoder(json.JSONEncoder):
@@ -24,7 +24,8 @@ class TrickModel(object):
     '''
     Trick
     '''
-    def __init__(self, title, author, created, url, languages=['en-US']):
+    def __init__(self, tid, title, author, created, url, languages=['en-US']):
+        self.id = tid
         self.title = title
         self.author = author
         self.created = created
@@ -76,6 +77,7 @@ class CatalogModel(object):
                     title = m.groups()[1]
                     path = prefix + '_' + title
 
+            tid = '{}-1'.format(title)
             created = int(os.stat(d[0]).st_mtime)
             url = self.url_normalize(path)
             # Get supported language
@@ -89,7 +91,7 @@ class CatalogModel(object):
                     else:
                         print('Warning: not supported language: {} for trick: {}'.format(language, f))
 
-            trick = TrickModel(title, AUTHOR, created, url, languages)
+            trick = TrickModel(tid, title, AUTHOR, created, url, languages)
             self.addTrick(trick)
 
         self.created = int(time.time())
